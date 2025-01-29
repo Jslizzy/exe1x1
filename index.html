@@ -1,61 +1,63 @@
-!DOCTYPE html
-html lang=en
-head
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    titleEXE.1X1 - Clothing Storetitle
-    style
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXE.1X1 - Clothing Store</title>
+    <style>
         body {
-            margin 0;
-            padding 0;
-            font-family Arial, sans-serif;
-            color white;
-            text-align center;
-            overflow-x hidden;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            background-color: black;
         }
         .video-background {
-            position fixed;
-            top 0;
-            left 0;
-            width 100%;
-            height 100%;
-            object-fit cover;
-            z-index -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
         .content {
-            position relative;
-            z-index 1;
-            padding 50px;
+            position: relative;
+            z-index: 1;
+            padding: 50px;
         }
         .hero {
-            font-size 3rem;
-            font-weight bold;
-            margin-top 20vh;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 20vh;
         }
         .shop-button {
-            background #ff4800;
-            padding 15px 30px;
-            border none;
-            color white;
-            font-size 1.2rem;
-            cursor pointer;
-            border-radius 5px;
-            transition 0.3s;
+            background: #ff4800;
+            padding: 15px 30px;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
         }
-        .shop-buttonhover {
-            background #d93c00;
+        .shop-button:hover {
+            background: #d93c00;
         }
-    style
-head
-body
-    video class=video-background autoplay loop muted
-        source src=82xpsi.mov type=videomp4
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="82xpsi.mp4" type="video/mp4">
+
         Your browser does not support the video tag.
-    video
-    div class=content
-        div class=heroWelcome to EXE.1X1div
-        pExclusive Streetwear Collectionsp
-        button class=shop-buttonShop Nowbutton
-    div
-body
-html
+    </video>
+    <div class="content">
+        <div class="hero">Welcome to EXE.1X1</div>
+        <p>Exclusive Streetwear Collections</p>
+        <button class="shop-button">Shop Now</button>
+    </div>
+</body>
+</html>
